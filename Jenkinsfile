@@ -5,7 +5,7 @@ pipeline {
             steps {
               echo 'Build ready for deployment'
            
-              bat 'xcopy C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Second_Pipeline_Test C:\\jenkins-react-app'
+              bat 'copy C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\Second_Pipeline_Test C:\jenkins-react-app'
               echo 'copy completed'
                  
             }

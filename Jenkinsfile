@@ -4,7 +4,7 @@ pipeline {
         stage("Deploy") {
             steps {
               echo 'Build ready for deployment'
-              bat 'rmdir C:\\jenkins-react-app /Q /S nonemptydir'
+              bat 'rmdir C:\\jenkins-react-app /Q /S'
               echo 'rmdir completed'
               bat 'copy ${WORKSPACE}\build/ C:\\jenkins-react-app'
               echo 'copy completed'
